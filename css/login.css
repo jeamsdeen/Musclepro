@@ -1,0 +1,142 @@
+
+body {
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 90vw;
+    width: 100%;
+    background-color: none;
+    padding: 3vw;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    height: auto; 
+}
+
+.button-container, .button-containerG {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.button-container button, .button-containerG button {
+    padding: 10px 5vw;
+    border: 1px solid #000;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.button-container button {
+    background-color: #4568B2;
+    color: rgba(255, 255, 255, 0.925);
+}
+
+.button-containerG button {
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.925);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vw;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"], input[type="password"] {
+    width: 80%;
+    max-width: 800px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #589a00;
+}
+
+input[type="submit"] {
+    width: 200px;
+    padding: 12px;
+    border: 1px solid #589a00;
+    background-color: #ffffff;
+    color: #589a00;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto; 
+    width: 70%;
+    border-bottom: 1px solid #e0e0e0;
+    max-width: 400px;
+}
+
+.tab {
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s;
+    border: 1px solid #000;
+    border-radius: 100px;
+    flex: 1; 
+    margin: 0 1vw;
+    font-size: 20px;
+}
+
+
+
+.active-tab {
+    color: #589a00;
+    border-bottom: 2px solid #589a00;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 768px) {
+    .tabs {
+        flex-direction: column;
+    }
+
+    .tab {
+        margin: 10px 0;
+    }
+
+    input[type="submit"] {
+        margin-left: 0;
+    }
+}
