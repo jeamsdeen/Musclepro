@@ -1,0 +1,186 @@
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.header-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; 
+    padding: 10px;
+}
+
+.header-icons a {
+    background-color: rgb(15, 15, 16); 
+    padding: 10px; 
+    border-radius: 5px;
+    margin: 0 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+.header-icons a img {
+    height: 30px;
+    width: auto;
+}
+
+.header-icons a:first-child {
+    margin-right: 5px; 
+}
+
+.header-icons a:hover {
+    background-color: lightblue;
+}
+
+.header-icons a:last-child {
+    margin-left: 5px;
+}
+
+.header-icons img {
+    height: 30px; 
+    width: auto;
+}
+
+.header-icons span {
+    flex-grow: 1; 
+    color: #ff0000;
+    font-size: 24px;
+    margin: 0 20px;  
+    background-color: transparent; 
+    padding: 10px 0; 
+    font-weight: bold;
+}
+
+#header-image {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+h2 {
+    text-align: center; 
+    background-color: #f2f2f2; 
+    color: red; 
+    margin: 0; 
+    padding: 10px; 
+    width: 100%; 
+}
+
+@media (max-width: 600px) {
+    #header-image {
+        width: 100%; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header-icons img {
+        height: 20px; 
+    }
+}
+
+footer {
+    background-color: #000; 
+    padding: 10px 0; 
+    text-align: center; 
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    padding: 5px 20px; 
+    width: 100%;
+}
+
+.footer-button {
+    text-align: center; 
+    padding: 20px; 
+}
+
+.footer-icons a {
+    background-color: rgb(0, 0, 0);
+    margin: 0 70px; 
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+}
+
+.footer-icons a:hover {
+    background-color: blue; 
+    filter: brightness(5); 
+}
+
+.footer-icons img {
+    height: 30px; 
+    width: auto; 
+    vertical-align: middle; 
+}
+
+.btn {
+    display: inline-block; 
+    padding: 10px 20px; 
+    margin-top: 10px; 
+    background-color: #007bff; 
+    color: white; 
+    text-align: center; 
+    text-decoration: none; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.btn:hover {
+    background-color: red; 
+}
+
+.login-container {
+    background: #fff; /* Couleur d'arrière-plan */
+    padding: 20px; /* Espacement à l'intérieur de la boîte */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre de la boîte */
+    width: 300px; /* Largeur de la boîte */
+    margin: 20px auto; /* Centrer la boîte */
+    text-align: center; /* Centrer le texte à l'intérieur */
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column; /* Empiler les éléments verticalement */
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd; /* Bordure des champs de saisie */
+}
+
+.login-container a {
+    color: red; /* Couleur des liens */
+    text-decoration: none; /* Pas de soulignement pour les liens */
+    margin-bottom: 10px; /* Espacement en dessous des liens */
+}
+
+.login-container button {
+    width: 85%;
+    padding: 10px;
+    border: none;
+    background-color: red; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    cursor: pointer; /* Curseur de type 'pointer' au survol */
+    margin-top: 20px; /* Espacement au-dessus du bouton */
+}
+
+.login-container button:hover {
+    opacity: 0.8; /* Effet au survol du bouton */
+}
